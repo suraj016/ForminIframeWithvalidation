@@ -1,0 +1,121 @@
+
+<!doctype html>
+<html lang="en"><head>
+    <title>Assignment</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    
+
+    <style>
+      body {
+          padding: 10px 50px;
+      }
+
+      .formdesign {
+          font-size: 20px;
+      }
+
+      .formdesign input {
+          width: 50%;
+          padding: 8px 15px;
+          border: 1px solid blue;
+          margin: 14px;
+          font-size: 15px;
+
+      }
+
+      .formerror {
+          color: red;
+      }
+
+      .but{
+          border-radius: 10px;
+          width: 100px;
+          height: 30px;
+          font-size: 25px;
+          margin: 22px 20px;
+
+      }
+  </style>
+
+  </head>
+  
+  
+        
+    
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  
+  <script src="js/countrystatecity.js?v2"></script>
+</head>
+<body>
+
+  <h1>Can you please provide your personal details</h1>
+  
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <h3>Country</h3>
+      <select name="country" class="countries form-control" id="countryId">
+    <option value="">Select Country</option>
+    
+</select>
+
+    </div>
+    <div class="col-sm-4">
+      <h3>State</h3>
+      <select name="state" class="states form-control" id="stateId">
+    <option value="">Select State</option>
+</select>
+    </div>
+    <div class="col-sm-4">
+      <h3>City</h3>        
+      <select name="city" class="cities form-control" id="cityId">
+    <option value="">Select City</option>
+</select>
+    </div>
+  </div>
+</div>        </p>            
+<div style='margin-left: auto;margin-right: auto;text-align: center;'>
+<br /><hr /><br /></div>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-149371669-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-149371669-1');
+</script>
+
+<form aciton ="/myaction.php" name="myForm" onsubmit="return validateForm()" method="post">
+
+  
+  <div class="formdesign" id="name">
+      Name: <input type="text" name="fname" required><b><span class="formerror"> </span></b>
+  </div>
+
+  <div class="formdesign" id="email">
+      Email: <input type="email" name="femail" required><b><span class="formerror"> </span></b>
+  </div>
+
+  <div class="formdesign" id="phone">
+      Phone: <input type="phone" name="fphone" required><b><span class="formerror"></span></b>
+  </div>
+
+  
+
+  <div class="formdesign" id="pass">
+      Password: <input type="password" name="fpass" required><b><span class="formerror"</span></b>
+  </div>
+
+  <div class="formdesign" id="cpass">
+      Confirm Password: <input type="password" name="fcpass" required><b><span class="formerror"></span></b>
+  </div>
+
+  <input class="but" type="submit" value="Submit">
+
+</form>
+
+
+  </body>
+</html>
